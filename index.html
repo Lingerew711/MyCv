@@ -11,30 +11,68 @@
 
 <body>
 
-    <table cellspacing="20">
+    
         <!--Navigation bar that links each html file to each oher-->
-        <hr>
         
-        <a href="index.html">Home</a> |
-        <a href="contact.html" target="_blank">Contact</a> |
+        <header>
+        <a href="index.html">Home</a> 
+        <a href="contact.html" target="_blank">Contact</a> 
         <a href="gallery.html" target="_blank">Gallery</a>
-        <hr>
-        <tr>
-            <td>
+    </header>
+        
+            <div class="top">
+                <span class="index" >
                 <img src="./images/hacker.gif" alt="profile picture">
-            </td>
-            <td>
+            </span>
+        
+                <span class="index">
                 <!-- header part of our page -->
                 <h1>Lingerew Getie(Dana)</h1>
                 <h3>Software Engineering student in AAiT</h3>
                 <p>My name is Lingerew, I am a programmer and web developer. I start coding when I was 15 <br> now I am excellent at programming</p>
-                <hr>
-            </td>
-        </tr>
-    </table>
+            </span>
+            </div>
+            
+    <style>
+        header{
+            border: solid 1px;
+            height: 15px;
+            padding: 15px;
+            font-size: 20px;
+            word-spacing: 20px;
+        }
+        div.footer{
+            word-spacing: 10px;
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        div.top{
+            border-bottom: solid 1px;
+        }
+        span.index{
+            display: inline-block;
+        }
+        .grid-container {
+            display: grid;
+            grid-column-gap: 10px;
+            grid-template-columns: auto auto;
+            /* padding: 10px; */
+            width: 500px;
+            }
+        .grid-item {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            text-align: left;
+            margin-left: 40px;
+            }
+        a:link{
+            text-decoration: none;
+        }
+    </style>
 
 
     <!-- list -->
+    <div class="top" >
     <h3>Hobbies and Interests.</h3>
     <ul>
         <!-- it is a block tag -->
@@ -66,82 +104,52 @@
         </li>
 
     </ul>
-    <hr>
+</div>
+<div class="top">
     <h3>
         Work Experience
     </h3>
-    <table cellspacing="20">
-        <thead>
-            <tr>
-                <th>
-                    Date
-                </th>
-                <th>
-                    Job
-                </th>
-            </tr>
-        </thead>
-
-        <tbody>
-            <tr>
-
-                <td>Jan 2010 - 2020</td>
-                <td>&nbsp;&nbsp;GoLang</td>
-            </tr>
-
-            <tr>
-                <td>Dec 2008 - 2020</td>
-                <td>&nbsp;&nbsp;Programmer at IcogLabs</td>
-            </tr>
-
-            <tr>
-                <td>July 2018 - 2020</td>
-                <td>&nbsp;&nbsp;Web developer at Ride</td>
-            </tr>
-            <tr>
-                <td>Sep 2013 - 2020</td>
-                <td>&nbsp;&nbsp;Cyber Security at InSa</td>
-            </tr>
-        </tbody>
-    </table>
-    <hr>
-
+            <div class="grid-container">
+                <div class="grid-item">Date</div>
+                <div class="grid-item">Job</div>
+                <div class="grid-item">Jan 2010 - 2020</div>  
+                <div class="grid-item">GoLang</div>
+                <div class="grid-item">Dec 2008 - 2020</div>
+                <div class="grid-item">Programmer at IcogLabs</div>  
+                <div class="grid-item">July 2018 - 2020</div>
+                <div class="grid-item">Web developer at Ride</div>
+                <div class="grid-item">Sep 2013 - 2020 </div>  
+                <div class="grid-item"> Cyber Security at InSa </div>
+               
+            </div>
+</div>
+            <div class="top">
     <h3>Top Skills</h3>
-    <table cellspacing="20">
-        <tr>
-            <td>PHP - web development</td>
-            <td>⭐️⭐️⭐️⭐️⭐️</td>
-
-        </tr>
-        <tr>
-            <td>Mobile programming</td>
-            <td>⭐️⭐️⭐️⭐️⭐️</td>
-        </tr>
-
-        <tr>
-            <td>C# programmer</td>
-            <td>⭐️⭐️⭐️⭐️⭐️</td>
-        </tr>
-
-
-        <tr>
-            <td>Android Development</td>
-            <td>⭐️⭐️⭐️⭐️⭐️</td>
-        </tr>
-
-        <tr>
-            <td>Web Developer</td>
-            <td>⭐️⭐️⭐️⭐️⭐️</td>
-        </tr>
-    </table>
-
-    <a href = "https://www.facebook.com/linge.dana" target="_balanck">Facebook</a> |
-    <a href = "https://www.instagram.com/?hl=en" target="_balanck">Instagram</a> |
-    <a href = "https://t.me/Linge531" target="_balanck">Telegram</a> |
-    <a href = "https://WhatsApp.com/Lingerew Getie" target="_balanck">WhatsApp</a> |
     
-    <p align = "center"> Developed by Linge &copy;2020  </p>
-
+        
+    <div class="grid-container">
+        <div class="grid-item">PHP - web development</div>
+        <div class="grid-item">⭐️⭐️⭐️⭐️⭐️</div>
+        <div class="grid-item">Mobile programming</div>  
+        <div class="grid-item">⭐️⭐️⭐️⭐️⭐️</div>
+        <div class="grid-item">C# programmer</div>
+        <div class="grid-item">⭐️⭐️⭐️⭐️⭐️</div>  
+        <div class="grid-item">Android App Development</div>
+        <div class="grid-item">⭐️⭐️⭐️⭐️⭐️</div>
+        <div class="grid-item">Web Developer</div>  
+        <div class="grid-item">⭐️⭐️⭐️⭐️⭐️</div>
+       
+    </div>
+    </div>
+<div class="footer" >
+    <a href = "https://www.facebook.com/linge.dana" target="_balanck">Facebook</a> 
+    <a href = "https://www.instagram.com/?hl=en" target="_balanck">Instagram</a> 
+    <a href = "https://t.me/Linge531" target="_balanck">Telegram</a> 
+    <a href = "https://WhatsApp.com/Lingerew Getie" target="_balanck">WhatsApp</a> 
+</div>
 </body>
+<footer>
+    <p align = "center"> Developed by Linge &copy;2020  </p>
+</footer>
 
 </html>
