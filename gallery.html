@@ -4,22 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallry</title>
-    <link rel="stylesheet" href="./css/gallary2.css">
 </head>
 <style>
-  header{
-       padding: 10px;
-       word-spacing: 10px;
-  }
+  ul.topnav {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            }
+
+        ul.topnav li {float: left;}
+
+        ul.topnav li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            }
+
+        ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+        ul.topnav li a.active {background-color: #4CAF50;}
+        @media screen and (max-width: 600px) and (orientation:portrait) {
+        ul.topnav li {float: none;}
+            }
 a:link{
     text-decoration: none;
 }
+#content:before {
+    content: 'Lingerew Getie/Gallary';
+    font-size: 30px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    position: relative;
+    left: 30%;
+}
+  .imgG1 {
+      display: flex;
+    float: right;
+    overflow: hidden;
+    width: 30%;
+    margin: 0.6%;
+  }
 </style>
-<header>
-    <a href="index.html" target="_blank">Home</a> 
-    <a href="contact.html" >Contact</a> 
-    <a href="gallery.html" target="_blank">Gallery</a>
-</header>
+<ul class="topnav">
+    <li><a  href="index.html" target="_blank">Home</a></li>
+    <li><a href="contact.html" target="_blank">Contact</a></li>
+    <li><a class = "active" href="gallery.html" target="_blank">Gallery</a></li>
+  </ul>
 <body>
     <p>
         <div id="content"></div>
@@ -43,4 +77,5 @@ a:link{
     <div class="imgG1">
     <img src="./images/cameraman.jpg" alt="Gallry Shop"></div></p>
 </body>
+
 </html>

@@ -14,11 +14,11 @@
     
         <!--Navigation bar that links each html file to each oher-->
         
-        <header>
-        <a href="index.html">Home</a> 
-        <a href="contact.html" target="_blank">Contact</a> 
-        <a href="gallery.html" target="_blank">Gallery</a>
-    </header>
+        <ul class="topnav">
+            <li><a class = "active" href="index.html" target="_blank">Home</a></li>
+            <li><a href="contact.html" target="_blank">Contact</a></li>
+            <li><a href="gallery.html" target="_blank">Gallery</a></li>
+          </ul>
         
             <div class="top">
                 <span class="index" >
@@ -34,19 +34,43 @@
             </div>
             
     <style>
-        header{
-            border: solid 1px;
-            height: 15px;
-            padding: 15px;
-            font-size: 20px;
-            word-spacing: 20px;
+        body{
+            /* margin: 10px; */
+            /* margin-top: 50px; */
         }
+        ul.topnav {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            }
+
+        ul.topnav li {float: left;}
+
+        ul.topnav li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            }
+
+        ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+        ul.topnav li a.active {background-color: #4CAF50;}
+        @media screen and (max-width: 600px) {
+        ul.topnav li {float: none;}
+            }
         div.footer{
+            position: relative;
+            top: 57px;
             word-spacing: 10px;
-            margin-top: 10px;
             margin-left: 20px;
         }
         div.top{
+            position: relative;
+            top: 50px;
             border-bottom: solid 1px;
         }
         span.index{
@@ -141,15 +165,16 @@
        
     </div>
     </div>
+</body>
 <div class="footer" >
+<footer>
+
     <a href = "https://www.facebook.com/linge.dana" target="_balanck">Facebook</a> 
     <a href = "https://www.instagram.com/?hl=en" target="_balanck">Instagram</a> 
     <a href = "https://t.me/Linge531" target="_balanck">Telegram</a> 
     <a href = "https://WhatsApp.com/Lingerew Getie" target="_balanck">WhatsApp</a> 
-</div>
-</body>
-<footer>
+
     <p align = "center"> Developed by Linge &copy;2020  </p>
 </footer>
-
+</div>
 </html>
