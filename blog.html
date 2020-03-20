@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment IV Q 4,5,6</title>
+    <link rel="stylesheet" href="./blog.css">
+  
+  <ul class="topnav">
+    <li><a  href="#Q4">Question 4</a></li>
+    <li><a href="#Q5">Question 5</a></li>
+    <li><a href="#Q6" >Question 6</a></li>
+  </ul>
+</head>
+
+<body>
+  
+  <ul class="vernav">
+    <li><a href="#Q4">Question 4</a></li>
+    <li><a href="#Q5">Question 5 <br> </a></li>
+    <li><a href="#Q6">Question 6</a></li>
+  </ul>
+  <!--lets create blog-->
+  <div id="mt">
+    <div id="content">
+      <section>
+        <!-- 1 post -->
+        <p class="title" id="Q4">Question 4: Answer</p>
+        <article>
+
+         <p class="sub-title">1. % (Percentage) </p>
+        <p class="content">
+          The percentage CSS data type represents a percentage value. It is often used to define a size as
+          relative to an element's parent object. Numerous properties can use percentages  , such as width, height, 
+          margin, padding, and font-size.The percentage data type consists of a number followed by the percentage 
+          sign (%). Optionally, it may be preceded by a single  + or  - sign, although negative values are not valid for 
+          all properties. As with all CSS dimensions, there is no space between the symbol and the number.</p>
+          <p class="content">
+          The following will set the width of the .child element to be 70% of the width of its parent. 
+          The element’s line height will be set to 140% of the value of its own font size. <br><br>
+        
+          .child { <br>
+              width: 70%; /* relative to the width of its container */ <br>
+              font-size: 16px; <br>
+              line-height: 140%; /* relative to its font size */ <br>
+          }
+          <br><br></p>
+          <p class="sub-title" >
+          2. em 
+        </p>
+        <p class="content">
+          In CSS, an em unit is equal to the computed font-size for the element to which the em is applied.
+          When em units are declared on child elements that don’t have a font-size defined, they will inherit 
+          their font-size from their parent, or from another ancestor element, possibly going all the way back to 
+          the root element on the document. <br>
+          Look at the following CSS:</p>
+          <p class="content">
+          .example { <br>
+              font-size: 20px; <br>
+          } <br>
+          In this case, 1em on this element, or on its child elements (assuming no other font-size definitions), 
+          would be equal to 20px. So if we added a line:
+        </p>
+        <p class="content">
+          .example { <br>
+              font-size: 20px; <br>
+              border-radius: .5em; <br>
+          }
+          This border-radius value of .5em computes to 10px (i.e. 20*.5). Similarly: 
+        </p>
+        <p class="content">
+          .example { <br>
+              font-size: 20px; <br>
+              border-radius: .5em; <br>
+              padding: 2em; <br>
+          }
+          The padding value of 2em is equal to 40px (20*2). 
+        </p>
+        <p class="sub-title">
+          3. rem 
+        
+        <p class="content">
+          The rem unit in CSS always inherits its value from the base font size setting on the root element of the document, 
+          irrespective of the computed font size. In HTML, the root  element is always the html element. So you could use rems,
+          but this would mean you’ll have to control all components on the page using the font size on that element. 
+          It<br> could work on certain projects, but I think this technique works best when focusing the resizability on an 
+          isolated component, rather than the whole document.
+          <p class="content">
+           One rem unit is: <br>
+          Equal to the computed value of font-size on the root element. When specified on the font-size property of the root 
+          element, the rem units refer to the property’s initial value.</p>
+          <p class="content">
+          so based on the above description and in my opinion it doesn't matter to use either %, em or rem but It is obvious 
+          that there are many advantages in using rem in our code, like  responsiveness, scalability, improved reading experience, 
+          and greater flexibility in defining components.
+          
+          </p>
+
+        </article>
+        <p class="date"> March 18, 2020: 8:00 PM</p>
+
+      </section>
+      <section>
+        <!-- 2nd post -->
+        <p class="title" id="Q5">Question 5: Answer </p>
+        <article>
+            <p>Setting the font size in pixel values (px) is a good choice when you need pixel accuracy which is static.
+              Needless to say, the default browser  font-size is 16px. For the browser 16px is equal to 100% and
+              everything is scaled compared to 16px. For example, if the font size of a paragraph
+              is 200px, the browser will calculate it like: if 16px is 100%, 200px is what?
+              So it will understand it as 200px is 1250 times default browser size(16px).
+              like 32px is twice of the default value. But, the browser passes a lot of steps to understand
+              this. Let's look at it.
+              When you write some HTML, CSS, and JS, and attempt to open the HTML file in your browser, 
+              the browser reads the <strong>raw bytes</strong> of HTML from your hard disk (or network).But not the 
+              actual characters you have written.
+              The browser receives the bytes of data, but it can’t really do anything with it; the raw bytes of 
+              data must be converted to a form it understands. So, the raw bytes will be converted into <strong>characters</strong>
+              and these characters are further parsed into something called <strong>tokens</strong>. Thus, the HTML file will be
+              broken down to tokens and this is how the browser begins to understand what we have written. Then,
+              the tokens will be converted into <strong>nodes</strong>. Upon creating these nodes, the nodes are then linked in a 
+              tree data structure known as the <strong>Document Object Model(DOM)</strong>. But, we didn't still come to CSS and measurements.
+              But, While the browser receives the raw bytes of data and kicks off the DOM construction process, it will also 
+              make a request to fetch the .css stylesheet linked.As soon the browser begins to parse the HTML, upon finding a 
+              link tag to a CSS file, it simultaneously makes a request to fetch that. Here after, the same procedure 
+              like the HTML will be applied. Raw bytes-characters-tokens-nodes-tree formed and the bytes-characters-tokens-nodes-tree
+              created is called <strong>CSSOM(CSS Object Model)</strong>. Now,the browser combines the DOM and CSSOM trees into something 
+              called a render tree. With the render tree constructed, the next step is to perform the layout. Right now, 
+              we have the content and style information of all visible content on the screen, but we haven’t actually 
+              rendered anything to the screen. Here it comes the calculation that we have talked earlier. The browser
+              has to calculate the exact size and position of each object on the page. Then, the browser will begin to 
+              calculate relative to the default browser size.With the information about the exact positions of each element now computed, 
+              all that is left is to paint the elements to the screen.</p>
+
+        </article>
+        <p class="date"> March 20, 2020: 8:00 PM</p>
+
+      </section>
+      <section>
+        <!-- 3rd post -->
+        <p class="title" id="Q6">Question 6: Answer</p>
+        <article>
+            <p>CSS3 is the latest version of CSS. It provides JavaScript like capabilities. In addition to this, it also 
+              provides mobile development features. It also has additional features like images, gradient, transition, etc.
+            </p>
+              <p class="sub-title">1.compatablity</p>
+              
+              <p>CSS3 is ackward compatible with CSS1. It will not make any code written in CSS1 invalid. It makes the look and 
+                feel of a webpage even better. They load faster and the time required to build a page is even less.</p>
+              
+              <p  class="sub-title">2. Rounded corners and Gradients</p>
+              
+             <p> Before CSS3 was launched developers used to design images which loooked like rounded corners to different strucures
+              and background gradients. But in CSS3 developres  just need to write the code like </p>
+              
+              <p>.round-border{ <br>
+                border-radius: 10px; <br>
+             } <br>
+             .groundBG{ <br>
+               liner-gradient(white,black); <br>
+             }</p>
+              
+              <p  class="sub-title">3.Animation and Text Effects</p>
+              
+              <p>Animation in CSS were written in javascript and JQuery. But Using CSS3 a developer can add text and shadow to make it easier
+                to read. They can also add visual  effects to break lines and longer words so that they fit properly inside the cloumns and word wraps</p>
+              
+              <p  class="sub-title">4. Lists</p>
+              
+              <p>CSS3 doesn't support numbering system and hence might ignore it being used. It enables that an image is set against againest the
+                list item maker.</p>
+              
+              <p class="sub-title">5. Pseduo Classes</p>
+              <p>
+              Their are some additional features that make it easier and famous to use.
+              These include:
+               <ol>
+                <li>Root target which document's root element </li>
+                <li>nth-children(n) uses numeric values within (n) to target child elements with respect to their postion in the parent.</li>
+                <li>empty taregets elements that do not have text or children, like empty elements such as </li>
+               </ol>
+              </p>
+
+        </article>
+        <p class="date"> March 19, 2020: 8:00 PM</p>
+
+      </section>
+
+  </div>  
+  </div>
+</body>
+<footer>
+  <p id="footer"> Developed by Linge &copy;2020  </p>
+</footer>
+</html>
