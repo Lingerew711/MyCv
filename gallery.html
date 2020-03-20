@@ -6,48 +6,65 @@
     <title>Gallry</title>
 </head>
 <style>
-  ul.topnav {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: #333;
-            }
+    ul.topnav {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+        }
 
-        ul.topnav li {float: left;}
+    ul.topnav li {float: left;}
 
-        ul.topnav li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            }
+    ul.topnav li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        }
 
-        ul.topnav li a:hover:not(.active) {background-color: #111;}
+    ul.topnav li a:hover:not(.active) {background-color: #111;}
 
-        ul.topnav li a.active {background-color: #4CAF50;}
-        @media screen and (max-width: 600px) and (orientation:portrait) {
-        ul.topnav li {float: none;}
-            }
-a:link{
-    text-decoration: none;
-}
-#content:before {
-    content: 'Lingerew Getie/Gallary';
-    font-size: 30px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-style: italic;
-    position: relative;
-    left: 30%;
-}
-  .imgG1 {
-      display: flex;
-    float: right;
-    overflow: hidden;
-    width: 30%;
-    margin: 0.6%;
-  }
+    ul.topnav li a.active {background-color: #4CAF50;}
+    @media screen and (max-width: 700px) {
+    body{
+        background-color: darkorange;
+    }
+    div.content{
+        font-size: 10px;
+    }
+    ul.topnav li {float: none;}
+        }
+    @media screen and (min-width: 700px) {
+    body{
+        background-color:rosybrown;}
+    div.content{
+        font-size: 20px;
+    }}
+    a:link{
+        text-decoration: none;
+    }
+    .content{
+        /* font-size: 30px; */
+        text-transform: uppercase;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-style: italic;
+        position: relative;
+        border-bottom: 2px solid;
+        padding-left: 30%;
+    }
+    .imgG1 {
+        display: flex;
+        flex-direction: column;
+        float: left;
+        overflow: hidden;
+        width: 30%;
+        margin: 1.66%;
+    }
+    /* body{
+        background-color: darkslategray;
+    } */
 </style>
 <ul class="topnav">
     <li><a  href="index.html" target="_blank">Home</a></li>
@@ -56,26 +73,28 @@ a:link{
   </ul>
 <body>
     <p>
-        <div id="content"></div>
+    <h3 class="content">lingerew getie/gallery</h3>
+<div class="imG2">
     <div class="imgG1">   
-    <img src="./images/cameraman.jpg" alt="Gallry Shop">
+    <img src="./images/cameraman.jpg" alt="Gallry Shop"></div>
+    <div class="imgG1">
+    <img src="./images/cameraman.jpg" alt="Gallry Shop"></div>
+    <div class="imgG1">
+    <img src="./images/cameraman.jpg" alt="Gallry Shop"></div>
+    <div class="imgG1">
+    <img src="./images/cameraman.jpg" alt="Gallry Shop"></div>
+    <div class="imgG1">
+    <img src="./images/cameraman.jpg" alt="Gallry Shop"></div>
+    <div class="imgG1">
+    <img src="./images/cameraman.jpg" alt="Gallry Shop"></div>
+    <div class="imgG1">
+    <img src="./images/cameraman.jpg" alt="Gallry Shop"></div>
+    <div class="imgG1">
+    <img src="./images/cameraman.jpg" alt="Gallry Shop"></div>
+    <div class="imgG1">
+    <img src="./images/cameraman.jpg" alt="Gallry Shop"></div>
 </div>
-    <div class="imgG1">
-    <img src="./images/cameraman.jpg" alt="Gallry Shop"></div>
-    <div class="imgG1">
-    <img src="./images/cameraman.jpg" alt="Gallry Shop"></div>
-    <div class="imgG1">
-    <img src="./images/cameraman.jpg" alt="Gallry Shop"></div>
-    <div class="imgG1">
-    <img src="./images/cameraman.jpg" alt="Gallry Shop"></div>
-    <div class="imgG1">
-    <img src="./images/cameraman.jpg" alt="Gallry Shop"></div>
-    <div class="imgG1">
-    <img src="./images/cameraman.jpg" alt="Gallry Shop"></div>
-    <div class="imgG1">
-    <img src="./images/cameraman.jpg" alt="Gallry Shop"></div>
-    <div class="imgG1">
-    <img src="./images/cameraman.jpg" alt="Gallry Shop"></div></p>
+</p>
 </body>
 
 </html>
